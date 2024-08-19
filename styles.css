@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282C35;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #282C35;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cart Container */
+.cart-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cart Items */
+.cart-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .cart-item img {
+        width: 100px; /* Adjust size as needed */
+        height: auto;
+        border-radius: 4px;
+    }
+
+.cart-item-info {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.cart-item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: black; /* Set item name text color to black */
+}
+
+.cart-item-price {
+    font-size: 16px;
+    color: black; /* Set item price text color to black */
+}
+
+.cart-item-remove {
+    background-color: #f44336;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .cart-item-remove:hover {
+        background-color: #d32f2f;
+    }
+
+/* Total Amount */
+.cart-total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: black; /* Set total amount text color to black */
+}
+
+/* Proceed Button */
+.proceed-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .proceed-button:hover {
+        background-color: #45a049;
+    }
+
+
+.shop-container, .cart-container, .checkout-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 8px;
+}
+
+    /* Modal Header */
+    .modal-content h2 {
+        color: black; /* Set header text color to black */
+    }
+
+    /* Modal Body */
+    .modal-content label {
+        color: black; /* Set label text color to black */
+        display: block; /* Ensure labels are block level */
+        margin-bottom: 10px; /* Space between options */
+    }
+
+/* Modal Buttons */
+.modal-button-container {
+    margin-top: 20px;
+}
+
+    .modal-button-container button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 4px;
+    }
+
+        .modal-button-container button:hover {
+            background-color: #009ACD;
+            color: white;
+        }
+
+.modal-content .close {
+    color: black; /* Set close button text color to black */
+    font-size: 24px;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+    .modal-content .close:hover {
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+    .item:hover {
+        transform: scale(1.05);
+    }
+
+    .item img {
+        width: 100%;
+        height: auto;
+    }
+
+.item-info {
+    padding: 10px;
+}
+
+.item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.item-price {
+    font-size: 18px;
+    color: #00BFFF;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+    button:hover {
+        background-color: #009ACD;
+        color: white;
+    }
+
+.remove-button {
+    background-color: #f44336;
+    color: white;
+}
+
+    .remove-button:hover {
+        background-color: #d32f2f;
+    }
